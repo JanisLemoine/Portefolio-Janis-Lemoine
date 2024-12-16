@@ -1,0 +1,1190 @@
+body {
+  margin: 0;
+
+  font-family: "Onest", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f8f8f8;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+h1 {
+  color: #4c392f;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h2 {
+  color: #4c392f;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+h3 {
+  color: #4c392f;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+h4 {
+  color: #4c392f;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+h5 {
+  color: #4c392f;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+p {
+  color: #4c392f;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  span {
+     font-size: 16px;
+  }
+}
+
+/* topbar */
+
+.topbar {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: #f8f8f8;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.topbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.topbar li {
+  margin: 0 36px;
+}
+
+.topbar a {
+  color: #4c392f;
+  text-decoration: none;
+  font-size: 20px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  transition: all 0.2s ease;
+}
+
+.topbar a:hover {
+  color: #5f493f;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .topbar {
+    height: auto;
+    padding: 2% 0;
+    flex-direction: row;
+  }
+
+  .topbar ul {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .topbar li {
+    margin: 10px 15px;
+  }
+
+  .topbar a {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+}
+
+/* PROFILE */
+
+.profile-section {
+  padding-top: 8%;
+  padding-bottom: 4%;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-radius: 0px 0px 10px 10px;
+  background: #b0ddd8;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  justify-content: center;
+}
+
+.portfolio-design {
+  margin-bottom: 2%;
+  
+}
+
+.portfolio-design >span {
+  font-size: 24px;
+  border-bottom: 2px solid #4c392f ;
+  padding-right: 10px;
+}
+.portfolio-design >span::before {
+  content:'' ;
+  display: inline-block;
+  width: 1px;
+  height: 21px;
+  margin-right: 10px;
+  border-left: 2px solid #4c392f;
+
+}
+
+.profile-section-container > p {
+  margin-left: 95px;
+  margin-right: 95px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.profile-section-container > h1 {
+  margin-bottom: 6px;
+}
+
+
+.profile-section-container > h3 {
+  margin-bottom: 25px;
+}
+
+.a-propos{
+  margin-top: 30px;
+}
+.mes-outils{ 
+  margin-top: 16px;
+  margin-left: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.mes-outils-container {
+  display: inline-flex;
+  justify-content:center;
+  align-items: center;
+  margin: 10px;
+  gap: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 2px solid#4c392f;
+  
+  
+}
+
+.logo-outil {
+  width: 20px;
+  height: 20px;
+}
+
+.etoiles {
+  gap: 0px;
+  display:inline-flex ;
+  justify-content: center;
+}
+
+.etoile {
+
+  font-size: 18px;
+  gap: 0;
+  color: #4c392f;
+  align-items: center;
+  display: inline-flex; /* Assure que l'icône est considérée comme un élément flexible */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center;    /* Centre verticalement */
+  
+  
+  
+}
+
+
+@media (max-width: 768px) {
+
+  .mes-outils{
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-left: 0px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .etoiles {
+   display: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .etoile {
+   height:13px;
+   width: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .mes-outils-container{
+   margin: 5px;
+   padding: 3px 5px;
+   gap: 5px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .logo-outil{
+   height:18px;
+   width: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .profile-section {
+    padding-top: 30%;
+    padding-bottom: 10%;
+    
+  }
+
+  
+  .profile-section-container > p {
+    margin: 15px 0vw;
+    line-height: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.nav {
+  display: flex;
+  padding: 0px 10px;
+
+  gap: 36px;
+  padding-left: 15%;
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding-left: 5%;
+    gap: 5px;
+    padding-top: 10%;
+    padding-bottom: 5%;
+  }
+
+} 
+.nav-item {
+  padding-top: 2%;
+}
+
+.nav-link {
+  border: 3px solid transparent !important;
+  background-color: #f8f8f8 !important;
+  color: #4c392f !important;
+  font-family: Onest;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.76px;
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  border-color: #89695b !important;
+}
+
+.nav-link:focus:not(:focus-visible) {
+  background-color: #89695b !important;
+  color: #f8f8f8 !important;
+}
+
+/* Mes projets */
+
+.projet-pro {
+  width: 70%;
+  padding: 0.5%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  gap: 20px;
+  border-radius: 10px;
+  border: 5px solid #5f493f;
+}
+
+.projet-pro-vignette {
+  border-radius: 10px;
+  background: #89695b;
+  padding: 30px 45px;
+}
+
+@media (max-width: 768px) {
+  .projet-pro {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .projet-pro-vignette {
+    padding: 25px ;
+  }
+
+} 
+
+
+.projet-pro-texte > h5 {
+  color: #f8f8f8;
+  font-weight: 300;
+  font-style: italic;
+}
+.projet-pro-texte > h4 {
+  margin-bottom: 5px;
+  color: #f8f8f8;
+}
+
+.projet-pro-texte > h3 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #f8f8f8;
+}
+
+.projet-pro-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .projet-pro-header {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+} 
+
+
+
+.projet-pro-figma {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .projet-pro-figma {
+    flex-direction: row-reverse;
+    align-self: flex-end;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+} 
+
+.figma-logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-family: Onest;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+
+  border-radius: 5px;
+  gap: 5px;
+}
+
+/* Bouton "Aller voir" */
+.view-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #7c594a;
+  color: white;
+  padding: 8px 12px;
+  gap: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.projet-pro-image-steam {
+  display: grid;
+  background-color: #7c594a;
+  box-shadow: -3px -3px 5px 0px rgba(0, 0, 0, 0.25) inset;
+  justify-items: center;
+  overflow-x: auto; /* Défilement horizontal */
+  max-height: 13rem; /* Limite la hauteur à une ligne d’images */
+  gap: 10px; /* Espace entre les images */
+  grid-template-columns: repeat(4, 1fr); /* Fixe la grille à 4 colonnes */
+  padding: 1%;
+  border-radius: 10px;
+  border: 5px solid #4c392f;
+  -webkit-overflow-scrolling: touch; /* Améliore l’expérience de défilement sur iOS */
+  
+}
+
+@media (max-width : 768px) {
+  .projet-pro-image-steam  {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  }
+
+/* Conteneur autour de chaque image */
+.custom-image-container {
+  position: relative; /* Nécessaire pour l'ombre et l'agrandissement */
+  overflow: hidden; /* Empêche l'image de déborder */
+  border-radius: 5px; /* Arrondir les bords */
+  cursor: pointer;
+}
+
+.custom-image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0); /* Ombre initialement transparente */
+  transition: box-shadow 0.3s ease;
+  pointer-events: none; /* Empêche l’élément de bloquer le survol */
+}
+
+.custom-image-container:hover::before {
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5); /* Ombre visible au survol */
+}
+
+/* Survol des images pour appliquer l'ombre intérieure et l'agrandissement */
+
+.images {
+  width: 100%;
+  height: auto;
+  display: block; /* S'assurer que l'image est un bloc */
+  border-radius: 5px; /* Rendre l'image arrondie */
+}
+
+/* Styles pour la barre de défilement */
+.projet-pro-image-steam::-webkit-scrollbar {
+  height: 6px; /* Hauteur de la barre de défilement horizontale */
+  width: 6px; /* Largeur de la barre de défilement verticale */
+}
+
+/* Apparence du curseur */
+.projet-pro-image-steam::-webkit-scrollbar-thumb {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+
+/* Cache la zone de fond de la barre de défilement */
+.projet-pro-image-steam::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Cache les boutons à chaque extrémité de la barre de défilement */
+.projet-pro-image-steam::-webkit-scrollbar-button {
+  display: none !important; /* Force la suppression du bouton */
+}
+
+/* Sur certains navigateurs (Chrome/Edge), la zone d'étirement de la barre de défilement peut encore être visible */
+.projet-pro-image-steam::-webkit-scrollbar-corner {
+  display: none; /* Cache le coin de la barre de défilement */
+}
+
+/* Style des images zen */
+
+.projet-pro-image-zen {
+  display: grid;
+  background-color: #7c594a;
+  box-shadow: -3px -3px 5px 0px rgba(0, 0, 0, 0.25) inset;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(5, 1fr); /* 4 images par ligne */
+  gap: 10px; /* Espace entre les images */
+  max-height: 300px; /* Ajuste cette valeur selon la taille souhaitée */
+  overflow-x: auto; /* Permet le défilement horizontal */
+  border-radius: 5px;
+  padding: 1%;
+  border-radius: 10px;
+  border: 5px solid #4c392f;
+}
+
+@media (max-width : 768px) {
+  .projet-pro-image-zen  {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  }
+
+.projet-pro-image-zen img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Assure que l'image couvre l'espace sans être déformée */
+  
+}
+
+
+.custom-image-container{
+  width: 85%;
+}
+/* Conteneur de chaque image */
+.projet-pro-image-zen .image-container {
+  position: relative;
+  
+   /* Cache l'excédent de l'image */
+  border-radius: 5px; /* Ajoute des coins arrondis aux images */
+}
+
+/* Effet d'ombre au survol du conteneur de l'image */
+
+/* Ajuste les images de la première ligne pour qu'elles s'affichent complètement sans être rognées */
+
+/* Styles pour la barre de défilement */
+.projet-pro-image-zen::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+  /* Hauteur de la barre de défilement */
+}
+
+.projet-pro-image-zen::-webkit-scrollbar-thumb {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+
+.projet-pro-image-zen::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* troisieme vignette*/
+
+.projet-pro-vignette-portefolio {
+  border-radius: 12px; /* Rounded corners */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #779e99;
+  padding: 45px 45px;
+  align-items: center; /* Center the content horizontally */
+}
+
+.projet-pro-vignette-portefolio > h4,h5 {
+  color: #f8f8f8;
+  font-weight: 300;
+}
+
+
+
+
+.projet-pro-header-protefolio {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Ensure it takes the full width */
+}
+
+.projet-pro-texte p {
+  margin-top: 10px;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.projet-pro-logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 logos per row */
+  gap: 12px;
+  width: 38%; /* Ensure the grid takes up the full width of the container */
+  justify-items: flex-end; /* Center logos horizontally in the grid */
+  margin-left: 1%;
+}
+
+
+@media (max-width: 768px) {
+  .projet-pro-vignette-portefolio {
+    padding: 25px ;
+  }
+
+} 
+
+@media (max-width : 768px) {
+.projet-pro-header-protefolio  {
+  flex-direction: column;
+  justify-content: flex-end;
+}
+}
+
+@media (max-width : 768px) {
+  .projet-pro-logos  {
+   margin-top: 10px;
+
+  }
+ }
+
+.logo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Center content horizontally */
+  text-align: flex-end; /* Align text below logos */
+}
+
+.logo {
+  width: 36px; /* Ensure all logos have the same size */
+  height: 36px;
+  justify-self: center;
+  object-fit: contain; /* Ensures the logo stays within the bounds */
+}
+
+.projet-pro-texte p {
+  color: #f8f8f8;
+}
+.projet-pro-texte h3,
+.projet-pro-texte h4 {
+  margin-bottom: 10px;
+}
+
+/*section projets perso*/
+
+.projet-perso {
+  width: 70%;
+  padding: 0.5%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  gap: 20px;
+  border-radius: 10px;
+  border: 5px solid #5f493f;
+}
+
+.projet-perso-vignette {
+  border-radius: 10px;
+  background: #89695b;
+  padding: 30px 45px;
+}
+
+.projet-perso-texte > h5 {
+  color: #f8f8f8;
+  font-weight: 300;
+  font-style: italic;
+}
+.projet-perso-texte > h4 {
+  margin-bottom: 5px;
+  color: #f8f8f8;
+}
+
+.projet-perso-texte > h3 {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  color: #f8f8f8;
+}
+
+.projet-perso-header {
+  display: flex;
+  gap: 18%;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.projet-perso-ps {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.ps-logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-family: Onest;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+
+  border-radius: 5px;
+  gap: 10px;
+}
+
+.projet-perso-image-astro {
+  display: grid;
+  background-color: #7c594a;
+  box-shadow: -3px -3px 5px 0px rgba(0, 0, 0, 0.25) inset;
+  overflow-x: auto; /* Défilement horizontal */
+  max-height: 261px; /* Limite la hauteur à une ligne d’images */
+  gap: 10px; /* Espace entre les images */
+  grid-template-columns: repeat(5, 1fr); /* Fixe la grille à 4 colonnes */
+  padding: 1%;
+  border: 5px solid #4c392f;
+  border-radius: 10px;
+}
+
+.projet-perso-image-astro img {
+  width: 100%;
+  height: auto;
+  display: block; /* S'assurer que l'image est un bloc */
+  border-radius: 5px; /* Rendre l'image arrondie */
+}
+
+.custom-image-container-perso {
+  position: relative; /* Nécessaire pour l'ombre et l'agrandissement */
+  overflow: hidden; /* Empêche l'image de déborder */
+  border-radius: 5px; /* Arrondir les bords */
+  cursor: pointer;
+}
+.custom-image-container-perso::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0); /* Ombre initialement transparente */
+  transition: box-shadow 0.3s ease;
+  pointer-events: none; /* Empêche l’élément de bloquer le survol */
+}
+
+.custom-image-container-perso:hover::before {
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5); /* Ombre visible au survol */
+}
+
+.projet-perso-image-astro::-webkit-scrollbar {
+  height: 6px; /* Hauteur de la barre de défilement horizontale */
+  width: 6px; /* Largeur de la barre de défilement verticale */
+}
+
+/* Apparence du curseur */
+.projet-perso-image-astro::-webkit-scrollbar-thumb {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+
+/* Cache la zone de fond de la barre de défilement */
+.projet-perso-image-astro::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Cache les boutons à chaque extrémité de la barre de défilement */
+.projet-perso-image-astro::-webkit-scrollbar-button {
+  display: none !important; /* Force la suppression du bouton */
+}
+
+/* Sur certains navigateurs (Chrome/Edge), la zone d'étirement de la barre de défilement peut encore être visible */
+.projet-perso-image-astro::-webkit-scrollbar-corner {
+  display: none; /* Cache le coin de la barre de défilement */
+}
+
+
+
+@media (max-width: 768px) {
+  .projet-perso {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .projet-perso-header {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
+
+} 
+ 
+
+@media (max-width: 768px) {
+  .projet-perso-vignette {
+    padding: 25px ;
+  }
+
+} 
+
+@media (max-width: 768px) {
+  .projet-perso-image-astro {
+   grid-template-columns: repeat(3, 1fr);
+  }
+
+} 
+
+
+/*Mon hobby*/
+
+.mon-hobby {
+  width: 70%;
+  padding: 0.5%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  gap: 20px;
+  border-radius: 10px;
+  border: 5px solid #5f493f;
+}
+
+.mon-hobby-vignette {
+  border-radius: 10px;
+  background: #89695b;
+  padding: 30px 45px;
+}
+
+.mon-hobby-texte > h5 {
+  color: #f8f8f8;
+  font-weight: 300;
+  font-style: italic;
+}
+.mon-hobby-texte > h4 {
+  margin-bottom: 5px;
+  color: #f8f8f8;
+}
+
+.mon-hobby-texte > h3 {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  color: #f8f8f8;
+}
+
+.mon-hobby-container-vignette > h3 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #f8f8f8;
+}
+
+.mon-hobby-header {
+  display: flex;
+  gap: 18%;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.mon-hobby-container {
+  column-count: 2; /* Nombre de colonnes */
+  column-gap: 20px; /* Espacement entre les colonnes */
+}
+
+.mon-hobby-container-vignette {
+  display: inline-block; /* Permet aux vignettes de rester dans les colonnes */
+  width: 100%; /* Permet au conteneur de prendre toute la largeur d'une colonne */
+  margin-bottom: 20px; /* Espacement vertical entre les vignettes */
+  border: 4px solid #4c392f;
+  background-color: #7c594a;
+  box-shadow: -3px -3px 5px 0px rgba(0, 0, 0, 0.25) inset;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.images-hobby {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .mon-hobby {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mon-hobby-header {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
+
+} 
+ 
+
+@media (max-width: 768px) {
+  .mon-hobby-vignette {
+    padding: 18px ;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .mon-hobby-container-vignette {
+    padding: 6px ;
+  }
+
+} 
+
+@media (max-width: 768px) {
+  .mon-hobby-container-vignette > h3 {
+    font-size: 15px;
+  }
+
+} 
+
+
+
+/*fullscreen*/
+
+.fullscreen-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+  backdrop-filter: blur(3px); /* Effet de flou */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Aligne l'image en haut pour permettre le défilement */
+  overflow-y: auto; /* Active le défilement vertical uniquement dans ce conteneur */
+  z-index: 1000;
+}
+
+/* Style pour l'image en plein écran */
+.fullscreen-image img {
+  max-width: 70%; /* Ajuste la largeur de l'image à 90% de l'écran pour créer un espace autour */
+  height: auto; /* Conserve le ratio de l'image */
+  margin-top: 10%; /* Marge en haut pour éviter d'être collé au bord supérieur */
+  margin-bottom: 10%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Ombre pour détacher l'image du fond */
+  border-radius: 10px; /* Arrondit les coins de l'image */
+}
+
+@media (max-width: 768px) {
+  .fullscreen-image img {
+    max-width: 90%;
+  }
+
+} 
+
+.close-fullscreen {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Désactive le scroll en arrière-plan */
+.no-scroll {
+  overflow: hidden;
+}
+
+/*contact*/
+
+/* Section de contact */
+.contact-section {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background: #b0ddd8;
+  padding-left: 20px;
+  padding-top: 50px;
+  padding-bottom: 90px;
+}
+
+.contact-section h1 {
+  margin-left: 10%;
+  font-size: 2rem;
+  color: #4c392f;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+.contact-section h3 {
+  text-align: center;
+  font-style: italic;
+}
+
+/* Container des boutons de contact */
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Boutons de contact */
+.contact-button {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: #f8f8f8;
+  color: #4c392f;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 7px 70px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .contact-button {
+    padding: 6px 25px; 
+    gap: 26px;
+  }
+
+} 
+
+
+/* Style pour les logos dans les boutons */
+.contact-logo {
+  width: auto;
+  height: 30px;
+}
+
+
+@media (max-width: 768px) {
+  .contact-section h1 {
+   margin-left: 0;
+  }
+
+} 
+
+@media (max-width: 768px) {
+  .contact-buttons {
+   gap: 20px;
+  }
+
+} 
+
+@media (max-width: 768px) {
+  .contact-logo {
+   height: 15px;
+  }
+
+} 
+
+@media (max-width: 768px) {
+  .contact-section {
+   padding-left: 40px;
+   padding-right: 40px;
+  }
+
+} 
+
+/* Couleurs spécifiques pour chaque bouton */
+.contact-button.linkedin {
+ /* Couleur LinkedIn */
+  border: 5px  solid#0077b5;
+  color: #0077b5;
+}
+
+.contact-button.gmail {
+ /* Couleur Gmail */
+  border: 5px  solid#d44638;
+  color: #d44638;
+}
+
+/* Effet au survol */
+.contact-button:hover {
+  background-color: #333;
+  color: #f8f8f8;
+}
+
+.contact-button.linkedin:hover {
+  background-color: #0077b5;
+}
+
+.contact-button.gmail:hover {
+  background-color: #d44638;
+}
+
+/*footer*/
+
+.site-footer {
+  background-color: #89695b;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.footer-content p {
+  margin: 0.5em 0;
+  font-size: 0.9rem;
+}
+
+.site-footer p:first-child {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+@media (max-width : 768px) {
+  .logo {
+    width: 26px;
+    height: 26px;
+  }
+}
